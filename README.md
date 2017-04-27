@@ -1,11 +1,11 @@
-#Introduction
+# Introduction
 
 This repo contains the binding of libModSecurity(aka ModSecurity v3) in Node.js. These bindings will allow users to utilize the exposed libmodsecurity interfaces directly from node.js.
 
 
 Please head over to the project [**Wiki**](https://github.com/manishmalik/Modsecurity-nodejs/wiki) for more details.
 
-#Installation guide
+# Installation guide
 Before you follow the following steps make sure you have npm, nodejs and swig(3.0+) installed in your system.
 
 1. First build libModSecurity in your system. [Compilation recipes](https://github.com/SpiderLabs/ModSecurity/wiki/Compilation-recipes)
@@ -20,5 +20,5 @@ Before you follow the following steps make sure you have npm, nodejs and swig(3.
 
 4. To test the node module, you may use : `npm test`. Further to test the simple connector you can `cd` into `example` and type `node simple_example.js`.
 
-#Disclaimer
+# Disclaimer
 This is in early development phase and is highly unstable. To see some known bugs or issues you may check [this](todo.md).
