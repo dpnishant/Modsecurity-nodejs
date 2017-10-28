@@ -26,6 +26,7 @@
 	TODO: Make it compatible
 	%include "std/std_multimap.i"
 */
+
 %include "attribute.i"
 %include "carrays.i"
 %include "typemaps.i"
@@ -44,6 +45,14 @@
 #include "modsecurity/rules_properties.h"
 #include "modsecurity/rules.h"
 #include "modsecurity/rule.h"
+#include "modsecurity/anchored_set_variable.h"
+#include "modsecurity/anchored_variable.h"
+#include "modsecurity/audit_log.h"
+#include "modsecurity/rule_message.h"
+#include "modsecurity/rules_exceptions.h"
+#include "modsecurity/rules_properties.h"
+#include "modsecurity/variable_origin.h"
+#include "modsecurity/actions/action.h"
 
 using std::basic_string;
 %}
@@ -75,10 +84,14 @@ using std::basic_string;
 %include "modsecurity/rules_properties.h"
 %include "modsecurity/rules.h"
 %include "modsecurity/rule.h"
-
+%include "modsecurity/anchored_set_variable.h"
+%include "modsecurity/anchored_variable.h"
+%include "modsecurity/audit_log.h"
+%include "modsecurity/rule_message.h"
+%include "modsecurity/rules_exceptions.h"
+%include "modsecurity/rules_properties.h"
+%include "modsecurity/actions/action.h"
 
 %template(RuleVector) std::vector<modsecurity::Rule *>;
 %template(VectorOfRuleVector) std::vector<std::vector<modsecurity::Rule *> >;
 %template(StringVector) std::vector<std::string>;
-
-
